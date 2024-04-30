@@ -155,13 +155,13 @@ main {
 
 #video {
 
-    width: 85%;
-    max-width: 85%;
+    width: 90%;
+    max-width: 90%;
     margin-top: 10%;
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    transform: scale(1.4,1.4);
+    transform: scale(1.2,1.2);
 
 }
 
