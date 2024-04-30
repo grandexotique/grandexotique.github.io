@@ -80,14 +80,21 @@ main {
 
 #mainheadline {
 
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: left;
     width: 100%;
-    max-width: 50%;
+    min-width: 50%;
+    max-width: 45%;
 
 
+}
+
+#titles {
+
+    line-height: 0.8;
+    margin-top: 0px;
 }
 
 #maintextproblems {
@@ -146,6 +153,17 @@ main {
 
 }
 
+#video {
+
+    width: 500px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    transform: scale(1.2,1.2);
+
+}
+
 
 
 footer {
@@ -174,6 +192,7 @@ footer p {
        margin-left: 20px;
        margin-bottom: 20px;
        text-align: left;
+       min-width: 500px;
 
        
     }
@@ -188,6 +207,11 @@ footer p {
 
     }
 
+    #titles {
+
+        line-height: 0.6;
+
+    }
 
     #mainimagedumarche {
 
@@ -201,6 +225,15 @@ footer p {
 
       
        
+    }
+
+    #video { 
+
+        margin-left: 10px;
+        margin-top: 0%;
+        transform: scale(1,1);
+
+
     }
 
     #maintextproblems {
@@ -258,12 +291,11 @@ footer p {
 
         background-color: #2650a4;
      }
-    }
+    
 
 
 footer {
 
     padding-bottom:5%;
     
-}
 }
