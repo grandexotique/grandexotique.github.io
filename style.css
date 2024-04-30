@@ -209,7 +209,7 @@ footer p {
 
     #titles {
 
-        line-height: 0.6;
+        line-height: 0.8;
 
     }
 
@@ -230,6 +230,7 @@ footer p {
     #video { 
 
         margin-left: 10px;
+        margin-right: 10px;
         margin-top: 0%;
         transform: scale(1,1);
 
