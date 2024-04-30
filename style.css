@@ -155,14 +155,6 @@ main {
 
 #video {
 
-    width: 90%;
-    max-width: 90%;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    transform: scale(1.2,1.2);
-
 }
 
 
