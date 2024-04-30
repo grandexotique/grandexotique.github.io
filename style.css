@@ -14,6 +14,18 @@ header {
   
 }
 
+#petittitre{
+
+    line-height: 1.1em;
+}
+
+#grandtitre{
+
+    line-height: 1.3em;
+}
+
+
+
 .header-content {
 
     display: flex;
