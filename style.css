@@ -153,6 +153,13 @@ main {
 
 #video {
 
+
+  #video {
+    width: 100%; /* Assurez-vous que la largeur du conteneur est de 100% */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement */
+    padding: 0;
+    position: relative; /* Conserve la position relative */
+
 }
 
 
