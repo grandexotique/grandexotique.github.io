@@ -92,8 +92,6 @@ main {
 }
 
 #titles {
-
-    line-height: 1;
     margin-top: 0px;
 }
 
@@ -199,8 +197,6 @@ footer p {
     }
 
     #titles {
-
-        line-height: 0.8;
 
     }
 
