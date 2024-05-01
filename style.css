@@ -255,6 +255,12 @@ footer p {
 
         line-height: 1.15;
     }
+
+     #petittitre {
+
+        line-height: 1.15;
+    }
+    
     #maintextproblems {
         max-width: 100%; /* Texte prendra toute la largeur */
         text-align: left;
