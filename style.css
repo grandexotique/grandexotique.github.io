@@ -250,6 +250,11 @@ footer p {
 
     }
 
+
+    #grandtitre {
+
+        line-height: 1.15;
+    }
     #maintextproblems {
         max-width: 100%; /* Texte prendra toute la largeur */
         text-align: left;
