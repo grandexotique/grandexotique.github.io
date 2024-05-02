@@ -1,88 +1,120 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page de Paiement</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 400px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-        input[type="text"], select {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-sizing: border-box;
-        }
-        input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de Paiement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+    input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    // Replace these with your actual Shopify details
+    const shopDomain = 'grandexotique.com';
+    const apiKey = '288f9b7582f27832b8b81dd95ec5fa1e';
+    const accessToken = '9a07627c4a80b0d1ce11acbb995d3ad3';
 
+    function submitForm() {
+      const form = document.getElementById('paymentForm');
+      const fullName = document.getElementById('nomcomplet').value;
+      const address = document.getElementById('adresse').value;
 
+function submitForm() {
+  const form = document.getElementById('paymentForm');
+  const fullName = document.getElementById('nomcomplet').value;
+  const address = document.getElementById('adresse').value;
 
-  <script src="script.js"></script>
+  // Validate form data (optional, can be improved)
+  if (!fullName || !address) {
+    alert('Veuillez remplir tous les champs obligatoires.');
+    return;
+  }
+
+  // Use Shopify Checkout JavaScript to open the checkout flow
+  Shopify.Checkout.configure({
+    shopDomain: shopDomain,
+    apiKey: apiKey,
+    accessToken: accessToken,
+  });
+
+  // Create a cart object with the desired product and quantity
+  const cart = [
+    {
+      id: 9030241124681, // Replace with your product ID
+      quantity: 1, // Set the quantity to 1
+    },
+  ];
+
+  // Open Shopify Checkout with customer information and pre-populated cart
+  Shopify.Checkout.open({
+    items: cart, // Include the cart object in the options
+    shippingAddress: {
+      firstName: fullName.split(' ')[0],
+      lastName: fullName.split(' ').slice(1).join(' '),
+      address1: address,
+    },
+  });
+}
+  </script>
 </head>
 <body>
 
 <div class="container">
-    <h2>Paiement Sécurisé</h2>
-    <form action="#" method="post">
-        <label for="nomcomplet">Nom Complet</label>
-        <input type="text" id="nomcomplet" name="nomcomplet" placeholder="MARO TRAORE" required>
-        
-        <label for="adresse">Adresse Complète</label>
-        <input type="text" id="adresse" name="adresse" minlength="6" placeholder=" X RUE XXXXXXX, 75000 PARIS">
-        
-        <label for="numero_carte">Numéro de Carte</label>
-        <input type="text" id="numero_carte" name="numero_carte" placeholder="XXXX XXXX XXXX XXX" required>
-        
-        <label for="date_expiration">Date d'expiration</label>
-        <input type="text" id="date_expiration" name="date_expiration" placeholder="01/2026" required>
-        
-        <label for="cvv">CVV</label>
-        <input type="text" id="cvv" name="cvv" placeholder="123">
-        
-        <label for="type_carte">Type de Carte</label>
-        <select id="type_carte" name="type_carte">
-            <option value="visa">Visa</option>
-            <option value="mastercard">Mastercard</option>
-        </select>
-        
-        <input type="submit" value="Acheter maintenant">
-    </form>
+  <h2>Paiement Sécurisé</h2>
+  <form id="paymentForm" onsubmit="return submitForm()">
+    <label for="nomcomplet">Nom Complet</label>
+    <input type="text" id="nomcomplet" name="nomcomplet" placeholder="MARO TRAORE" required>
+     
+    <label for="adresse">Adresse Complète</label>
+    <input type="text" id="adresse" name="adresse" minlength="6" placeholder=" X RUE XXXXXXX, 75000 PARIS">
+     
+    <input type="submit" value="Aller au Paiement">
+  </form>
 </div>
+
+<script src="https://cdn.shopify.com/api/checkout.js"></script>
 
 </body>
 </html>
+
