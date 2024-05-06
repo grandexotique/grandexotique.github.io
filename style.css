@@ -260,6 +260,12 @@ footer p {
 
         line-height: 1.25;
     }
+
+    #justi-abo {
+
+        line-height: 1,25;
+        font-weight: 200;
+    }
     
     #maintextproblems {
         max-width: 100%; /* Texte prendra toute la largeur */
