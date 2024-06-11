@@ -7,21 +7,14 @@ body {
 }
 
 header {
-  
-
-        background-color: white;
-        
-  
+    background-color: white;
 }
 
 .header-content {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-right: 0.5%;
-    
- 
 }
 
 .logo img {
@@ -30,125 +23,48 @@ header {
     margin-left: 15px;
 }
 
-.title {
-    text-align: left;
-    margin: 0; 
+#btn1, #btn3 {
+    padding: 25px;
 }
-
-.title h1 {
-    font-size: 1.5em;
-}
-
-.title h2 {
-    margin: 0;
-    font-size: 0.8em;
-    color: #888;
-}
-
-#btn1 {
-
-    padding:25px;
-}
-
-#btn2 {
-
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 18px;
-    padding-right: 18px;
-    font-size: 1.2em;
-}
-
-
-
 
 .cta .btn {
     padding-top: 7px;
     padding-bottom: 7px;
     padding-left: 14px;
     padding-right: 14px;
-
     background-color: #4891FF;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
-    
-   
 }
 
 .cta .btn:hover {
     background-color: #2650a4;
-
-}
-
-#klaviyoform {
-
-    margin-right: none;
 }
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 9%;
     margin-top: 8%;
-    margin-right: 0.5%;
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-#mainheadline {
-
-    margin-top: 2%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: left;
-    max-width: 45%;
-    min-width: 45%;
-
-
 }
 
 #mainimagedumarche {
-
-      text-align: center;
-      display: flex;
-      width: 65%;
-      min-width: 65%;
-     
-
-
-  
-
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 #mainimagedumarche img {
-    
     border-radius: 8%;
-    min-width: 100%;
-    width: 100%;
-    height: 100%;
-  
-
-}
-
-
-#maintextproblems {
-    min-width: 80%;
-    text-align: left;
-}
-
-#maintextproblems h3 {
-    margin: 10px 0;
-}
-
-#maintextproblems ul {
-    margin-left: 10px;
-    padding-left: 20px;
-    font-size: medium;
-
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 70vh; /* Ajustez cette valeur selon la taille de votre image */
 }
 
 footer {
@@ -165,92 +81,23 @@ footer p {
     font-size: 12px;
 }
 
-/* PAGE SELLING CSS*/
-
-
-#mainheadlinesellingpage {
-  
-}
-
-#mainimageoffrespeciale {
-
-}
-
-#reduction {
-
-    border:none;
-    padding: none;
-    margin: none;
-}
-
-/* END SELLING CSS*/
-
-
-
-
 @media only screen and (max-width: 800px) {
     main {
-       font-size: 1em;
-       display: flex;
-       flex-direction: column;
-       text-align: left;
-       margin-top: 1%;
-       margin-right: 5%;
-       margin-bottom: 20px;
-
-       
+        margin-top: 1%;
     }
-
-    #mainheadline {
-
-        order: 2;
-        max-width: 100%; /* Image prendra toute la largeur */
-        width: %;
-        margin-left: 6%;
-        
-
-    }
-
-    #pricetext {
-
-        margin-left: %;
-    }
-
 
     #mainimagedumarche {
-
-        width: 86%;
-        margin-top:20px;
-        margin-left: 10px;
+        width: 100%;
+        margin-top: 20px;
     }
 
     #mainimagedumarche img {
-        order: 1;
-        height: 10%;
         width: 100%;
-        margin-left: 8%;
-        transform: scale(1.1,1.1);
-
-      
-       
+        height: auto;
+        max-height: 50vh; /* Ajustez cette valeur selon la taille de votre image */
     }
 
-    #maintextproblems {
-        max-width: 100%; /* Texte prendra toute la largeur */
-        text-align: left;
+    footer {
+        padding-bottom: 5%;
     }
-
-    #btn1 {
-
-        padding:15px;
-        margin-top: 10px;
-
-}
-
-
-footer {
-
-    padding-bottom:5%;
-    
-}
 }
