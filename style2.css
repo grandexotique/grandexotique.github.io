@@ -63,10 +63,9 @@ main {
 
 #mainimagedumarche img {
     border-radius: 8%;
-    width: 100%;
+    width: 120%; /* Increase the width to 120% */
     height: auto; /* Maintain aspect ratio */
-    max-width: 50vh; /* Ensure the image is square */
-    transform: scale(1.5); /* Increase the size of the image by 10% */
+    max-width: 60vh; /* Ensure the image is square */
 }
 
 footer {
@@ -94,13 +93,14 @@ footer p {
     }
 
     #mainimagedumarche img {
-        width: 100%;
+        width: 120%; /* Increase the width to 120% */
         height: auto;
-        max-width: 50vh; /* Ensure the image is square */
+        max-width: 60vh; /* Ensure the image is square */
     }
 
     footer {
         padding-bottom: 5%;
     }
 }
+
 
