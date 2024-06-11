@@ -25,15 +25,15 @@ header {
 
 #btn1, #btn3 {
     padding: 25px;
-    padding-right: 40px;
-    padding-left: 40px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
 .cta .btn {
     padding-top: 7px;
     padding-bottom: 7px;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: #4891FF;
     color: white;
     text-decoration: none;
