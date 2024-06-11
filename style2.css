@@ -25,6 +25,8 @@ header {
 
 #btn1, #btn3 {
     padding: 25px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .cta .btn {
