@@ -55,12 +55,13 @@ header {
     padding-bottom: 7px;
     padding-left: 14px;
     padding-right: 14px;
-
     background-color: #4891FF;
     color: white;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+    width: 25%; /* Adjusted width */
+    max-width: 300px; /* Limiting the max-width for larger screens */
     
    
 }
