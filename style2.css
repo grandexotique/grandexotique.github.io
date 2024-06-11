@@ -58,10 +58,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%; /* Adjust the width to fit the screen without scrolling */
-    max-width: 90%;
-    lenght: 90%;
-    max-lenght: 50%;
+    width: 80%; /* Adjust the width to fit the screen without scrolling */
+    max-width: 80%;
+    lenght: 80%;
+    max-lenght: 80%;
 }
 
 #mainimagedumarche img {
