@@ -49,6 +49,7 @@ main {
     justify-content: center;
     align-items: center;
     margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 #mainimagedumarche {
@@ -56,15 +57,15 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%; /* Adjust the width to fit the screen without scrolling */
+    max-width: 100%;
 }
 
 #mainimagedumarche img {
     border-radius: 8%;
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 70vh; /* Ajustez cette valeur selon la taille de votre image */
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 70vh; /* Adjust this value as needed */
 }
 
 footer {
@@ -94,10 +95,11 @@ footer p {
     #mainimagedumarche img {
         width: 100%;
         height: auto;
-        max-height: 50vh; /* Ajustez cette valeur selon la taille de votre image */
+        max-height: 50vh; /* Adjust this value as needed */
     }
 
     footer {
         padding-bottom: 5%;
     }
 }
+
