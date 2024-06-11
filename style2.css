@@ -66,6 +66,7 @@ main {
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     max-width: 50vh; /* Ensure the image is square */
+    transform: scale(1.2); /* Increase the size of the image by 10% */
 }
 
 footer {
