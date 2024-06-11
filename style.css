@@ -1,332 +1,262 @@
-body {
-    font-family: "Poppins", sans-serif;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
-header {
-  
-
-        background-color: white;
-        
-  
-}
-
-.header-content {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 0.5%;
-    
- 
-}
-
-.logo img {
-    height: 65px;
-    width: 65px;
-    margin-left: 15px;
-}
-
-.title {
-    text-align: left;
-    margin: 0; 
-}
-
-.title h1 {
-    font-size: 1.5em;
-}
-
-.title h2 {
-    margin: 0;
-    font-size: 0.8em;
-    color: #888;
-}
-
-#btn1 {
-
-    padding:25px;
-}
-
-.cta .btn {
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 14px;
-    padding-right: 14px;
-
-    background-color: #4891FF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    
-   
-}
-
-.cta .btn:hover {
-    background-color: #2650a4;
-}
-
-main {
-    display: flex;
-    align-items: left;
-    margin-bottom: 9%;
-    margin-top: 120px;
-    margin-right: 0.5%;
-
-}
-
-#mainheadline {
-
-    margin-top: 1%;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: left;
-    width: 100%;
-    min-width: 50%;
-    max-width: 45%;
-
-
-}
-
-#titles {
-
-    line-height: 0.8;
-    margin-top: 0px;
-}
-
-#maintextproblems {
-    min-width: 100%;
-    text-align: left;
-}
-
-#maintextproblems h3 {
-    margin: 10px;
-}
-
-#maintextproblems ul {
-    margin: 10px;
-    padding-left: 20px;
-}
-
-
-#telephone {
-
-    margin-top:10px;
-    padding-right: 5%;
-    padding-left: 5%;;
-    border-right: 40%;
-    border-left:60%;
-    text-align: left;
-    font-family: "Poppins";
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 24px;
-    padding-right: 24px;
-    background-color: white;
-    color: #4891FF;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    box-shadow: none;
-    
-
-}
-
-/*  padding-right: 5%;
-    padding-left: 5%;;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    */
-    
-#mainimagedumarche {
-
-      text-align: center;
-
-}
-
-#mainimagedumarche img {
-    
-    border-radius: 8%;
-
-}
-
-#video {
-
-    width: 500px;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    transform: scale(1.2,1.2);
-
-}
-
-
-
-footer {
-    background-color: #ffffff;
-    padding-top: 3%;
-    padding-right: 5%;
-    padding-bottom: 2%;
-    text-align: right;
-}
-
-footer p {
-    margin-right: 10%;
-    color: #575757;
-    font-size: 10px;
-    text-align: right;
-}
-
-
-@media only screen and (max-width: 800px) {
-     h2, h4 {
-        line-height: 1.1;  /* Increase line height for better readability */
-        height: 40px;
-    }
-    main {
-       font-size: 1em;
-       display: flex;
-       flex-direction: column;
-       margin-top: 20px;
-       margin-right: 20px;
-       margin-left: 20px;
-       margin-bottom: 20px;
-       text-align: left;
-       
-
-       
-    }
-    .go1875850290{
-        margin-top:90px
-    }
-
-
-    
-
-    #mainheadline {
-
-        order: 2;
-        max-width: 100%; /* Image prendra toute la largeur */
-        width: 88%;
-        border-radius: 3%;
-
-
-    }
-
-    #titles {
-
-        line-height: 0.6;
-
-    }
-
-    #mainimagedumarche {
-
-    
-    }
-
-    #mainimagedumarche img {
-        order: 1;
-        height: 90%;
-        width: 90%;
-
-      
-       
-    }
-
-    #video { 
-
-        display: flex;
-        height: 90%;
-        width: 90%;
-
-        margin-left: 10px;
-        margin-top: 0%;
-        transform: scale(1,1);
-
-
-    }
-
-
-    #grandtitre {
-
-        line-height: 1.15;
-    }
-
-     #petittitre {
-
-        line-height: 1.25;
-    }
-
-    #justi-abo {
-
-        line-height: 1.25;
-        font-weight: 200;
-    }
-    
-    #maintextproblems {
-        max-width: 100%; /* Texte prendra toute la largeur */
-        text-align: left;
-        margin: none; /* Ajout de marges normales */
-    }
-
-    #btn1 {
-
-        padding:15px;
-        margin-top: 10px;
-
-}
-
-    #telephone {
-        margin-top:8px;
-        border: solid 0.4px black;      
-        text-align: left;
-        border-radius: 1%;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 24px;
-        padding-right: 24px;
-        background-color: #ffffff;
-        color: rgb(1, 1, 1);
-        text-decoration: none;
-        border-radius: 1%;
-        transition: background-color 0.3s;
-        width: 69%;
-
-
-    }
-
-
-    #payer {
-
-        margin-top:8px;
-        border: solid 0px white;      
-        text-align: left;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        padding-left: 24px;
-        padding-right: 24px black;
-        background-color: #4891FF;
-        color: white;
-        text-decoration: none;
-        border-radius: 1%;
-        transition: background-color 0.3s;
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouton de redirection</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            text-align: left;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
         }
-    }
 
-     #button:hover {
+        header {
+            background-color: white;
+        }
 
-        background-color: #2650a4;
-     }
-    
+        .header-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0.5%;
+        }
 
+        .logo img {
+            height: 65px;
+            width: 65px;
+            margin-left: 15px;
+        }
 
-footer {
+        .title {
+            text-align: left;
+            margin: 0;
+        }
 
-    padding-bottom:5%;
+        .title h1 {
+            font-size: 1.5em;
+        }
+
+        .title h2 {
+            margin: 0;
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        .cta .btn {
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 14px;
+            padding-right: 14px;
+            background-color: #4891FF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            width: 25%; /* Adjusted width */
+            max-width: 300px; /* Limiting the max-width for larger screens */
+        }
+
+        .cta .btn:hover {
+            background-color: #2650a4;
+        }
+
+        main {
+            display: flex;
+            align-items: left;
+            margin-bottom: 9%;
+            margin-top: 120px;
+            margin-right: 0.5%;
+        }
+
+        #mainheadline {
+            margin-top: 1%;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: left;
+            width: 100%;
+            min-width: 50%;
+            max-width: 45%;
+        }
+
+        #titles {
+            line-height: 0.8;
+            margin-top: 0px;
+        }
+
+        #maintextproblems {
+            min-width: 100%;
+            text-align: left;
+        }
+
+        #maintextproblems h3 {
+            margin: 10px;
+        }
+
+        #maintextproblems ul {
+            margin: 10px;
+            padding-left: 20px;
+        }
+
+        #telephone {
+            margin-top: 10px;
+            padding-right: 5%;
+            padding-left: 5%;
+            border-right: 40%;
+            border-left: 60%;
+            text-align: left;
+            font-family: "Poppins";
+            padding-top: 14px;
+            padding-bottom: 14px;
+            padding-left: 24px;
+            padding-right: 24px;
+            background-color: white;
+            color: #4891FF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            box-shadow: none;
+        }
+
+        #button:hover {
+            background-color: #2650a4;
+        }
+
+        @media only screen and (max-width: 800px) {
+            h2,
+            h4 {
+                line-height: 1.1;
+                height: 40px;
+            }
+
+            main {
+                font-size: 1em;
+                display: flex;
+                flex-direction: column;
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+
+            .go1875850290 {
+                margin-top: 90px
+            }
+
+            #mainheadline {
+                order: 2;
+                max-width: 100%;
+                width: 88%;
+                border-radius: 3%;
+            }
+
+            #titles {
+                line-height: 0.6;
+            }
+
+            #mainimagedumarche {}
+
+            #mainimagedumarche img {
+                order: 1;
+                height: 90%;
+                width: 90%;
+            }
+
+            #video {
+                display: flex;
+                height: 90%;
+                width: 90%;
+                margin-left: 10px;
+                margin-top: 0%;
+                transform: scale(1, 1);
+            }
+
+            #grandtitre {
+                line-height: 1.15;
+            }
+
+            #petittitre {
+                line-height: 1.25;
+            }
+
+            #justi-abo {
+                line-height: 1.25;
+                font-weight: 200;
+            }
+
+            #maintextproblems {
+                max-width: 100%;
+                text-align: left;
+                margin: none;
+            }
+
+            #btn1 {
+                padding: 15px;
+                margin-top: 10px;
+            }
+
+            #telephone {
+                margin-top: 8px;
+                border: solid 0.4px black;
+                text-align: left;
+                border-radius: 1%;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 24px;
+                padding-right: 24px;
+                background-color: #ffffff;
+                color: rgb(1, 1, 1);
+                text-decoration: none;
+                border-radius: 1%;
+                transition: background-color 0.3s;
+                width: 69%;
+            }
+
+            #payer {
+                margin-top: 8px;
+                border: solid 0px white;
+                text-align: left;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 24px;
+                padding-right: 24px black;
+                background-color: #4891FF;
+                color: white;
+                text-decoration: none;
+                border-radius: 1%;
+                transition: background-color 0.3s;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo">
+            <img src="your-logo.png" alt="Your Logo">
+        </div>
+        <div class="title">
+            <h1>Your Title</h1>
+            <h2>Your Subtitle</h2>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div id="mainheadline">
+        <h2 id="grandtitre">Your Main Headline</h2>
+        <p id="petittitre">Your Small Subtitle</p>
+        <div id="button">
+            <a href="https://buy.stripe.com/4gwdR92jW8Oq8jSbIJ" target="_blank" class="cta btn">Redirection vers le lien Stripe</a>
+        </div>
+    </div>
+    <div id="mainimagedumarche">
+        <img src="your-image.png" alt="Your Image">
+    </div
+
     
 }
