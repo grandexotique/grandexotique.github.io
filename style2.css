@@ -60,6 +60,8 @@ main {
     align-items: center;
     width: 90%; /* Adjust the width to fit the screen without scrolling */
     max-width: 90%;
+    lenght: 90%;
+    max-lenght: 50%;
 }
 
 #mainimagedumarche img {
